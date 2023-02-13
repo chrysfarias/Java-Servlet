@@ -17,7 +17,8 @@ public class NewServletCompany extends HttpServlet {
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		System.out.println("Registering new company");
 		PrintWriter out = response.getWriter();
-		out.println("<html><body>successfully registered company</body></html>");
+		String nameCompany = request.getParameter("name");
+		out.println("<html><body>successfully registered company: </body></html>" + nameCompany);
 	}
 
 }
