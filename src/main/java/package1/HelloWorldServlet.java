@@ -11,6 +11,8 @@ import javax.servlet.http.HttpServletResponse;
 
 
 @WebServlet(urlPatterns = "/hello")
+
+
 public class HelloWorldServlet extends HttpServlet {
 	
 	@Override
@@ -21,6 +23,7 @@ public class HelloWorldServlet extends HttpServlet {
 		out.println("<html>");
 		out.println("<body>");
 		out.println("hello, world, congratz");
+		out.println("test");
 		out.println("</body");
 		out.println("</html");
 		
