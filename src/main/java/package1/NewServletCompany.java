@@ -18,6 +18,14 @@ public class NewServletCompany extends HttpServlet {
 		System.out.println("Registering new company");
 		PrintWriter out = response.getWriter();
 		String nameCompany = request.getParameter("name");
+		
+		Company company  = new Company();
+		company.setName(nameCompany);
+		
+		DataBaseList dataBaseList = new DataBaseList();
+		dataBaseList.addCompany(company);
+		
+		
 		out.println("<html><body>successfully registered company: </body></html>" + nameCompany);
 	}
 
