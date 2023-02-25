@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 
 
 @WebServlet("/newCompany")
+
 public class NewServletCompany extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
@@ -26,7 +27,10 @@ public class NewServletCompany extends HttpServlet {
 		dataBaseList.addCompany(company);
 		
 		
+		
 		out.println("<html><body>successfully registered company: </body></html>" + nameCompany);
+		
+		
 	}
 
 }
