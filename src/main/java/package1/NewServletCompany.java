@@ -26,11 +26,6 @@ public class NewServletCompany extends HttpServlet {
 		DataBaseList dataBaseList = new DataBaseList();
 		dataBaseList.addCompany(company);
 		
-		
-		
-		out.println("<html><body>successfully registered company: </body></html>" + nameCompany);
-		
-		
 	}
 
 }
